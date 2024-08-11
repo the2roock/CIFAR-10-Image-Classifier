@@ -163,11 +163,3 @@ cython_debug/
 
 # VS Code
 Traffic-Sign-Classification.code-workspace
-
-# data
-data/mtsd_v2_fully_annotated/annotations/*.json
-data/mtsd_v2_fully_annotated/images/*.jpg
-data/signs_only/annotations/*.json
-data/signs_only/images/*.jpg
-data/unisized_signs/annotations/*.json
-data/unisized_signs/images/*.jpg

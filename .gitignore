@@ -165,9 +165,9 @@ cython_debug/
 Traffic-Sign-Classification.code-workspace
 
 # data
-data/mtsd_v2_fully_annotated/annotations/*
-data/mtsd_v2_fully_annotated/images/*
-data/signs_only/annotations/*
-data/signs_only/images/*
-data/unisized_signs/annotations/*
-data/unisized_signs/images/*
+data/mtsd_v2_fully_annotated/annotations/*.json
+data/mtsd_v2_fully_annotated/images/*.jpg
+data/signs_only/annotations/*.json
+data/signs_only/images/*.jpg
+data/unisized_signs/annotations/*.json
+data/unisized_signs/images/*.jpg

@@ -162,7 +162,7 @@ cython_debug/
 #.idea/
 
 # VS Code
-Traffic-Sign-Classification.code-workspace
+Cifar10-Classification.code-workspace
 
-# large files
-data.pickle
+# TensorFlow models
+models/*

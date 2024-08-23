@@ -46,29 +46,27 @@ The model is a deep convolutional neural network (CNN) designed to effectively c
 
 ![Model Architecture](https://github.com/the2roock/Cifar10-Classification/blob/main/report_images/Cifar10%20NN%20Architecture.png)
 
-- **Layers**:
-  - **Input Layer**: Accepts 32x32 RGB images.
-  - **Conv2D Layers**: Multiple convolutional layers with increasing filters (64, 128, 256) to capture spatial features.
-  - **Pooling Layers**: MaxPooling2D and AveragePooling2D layers to reduce the spatial dimensions of the feature maps.
-  - **Add Layers**: Implements skip connections to enhance learning, resembling residual networks.
-  - **Batch Normalization**: Used after each add layer to stabilize and speed up training.
-  - **Dense Layers**: Fully connected layers for classification.
-  
-- **Architecture Details**:
-  - **Conv2D Layers**: 
-    - First block: Conv2D with 64 filters, followed by BatchNormalization and MaxPooling.
-    - Second block: Conv2D with 128 filters, combined with skip connections and MaxPooling.
-    - Third block: Conv2D with 256 filters, incorporating additional skip connections and MaxPooling.
-  - **Batch Normalization**: Applied after each skip connection to normalize the output.
-  - **Final Layer**: Fully connected (Dense) layer with a softmax activation for output.
-  
-- **Parameter Count**:
-  - **Total Trainable Parameters**: 2,229,248
+The network employs a series of convolutional layers, residual connections, and max pooling operations to extract and learn features from the input images. The architecture includes the following key components:
+**1. Input Layer**:
+  - The input layer accepts images of size 32×32×3 (width, height, channels).
+**2. Convolutional Blocks**:
+  - The network is structured into blocks, each containing convolutional layers, residual connections, batch normalization, and activation functions.
+  - The first block starts with a 64-filter convolutional layer and progresses through deeper layers with increasing filter sizes 128, 256 and 512.
+**3. Residual Connections**:
+  - To facilitate better gradient flow and mitigate the vanishing gradient problem, residual connections are used within blocks, allowing the network to learn identity mappings.
+**4. Pooling Layers**:
+  - Max and Average Pooling layers are applied after each block to reduce the spatial dimensions of the feature maps, effectively downsampling the input while retaining the most crucial features.
+**5. Fully Connected Layers**:
+  - After the final convolutional layer, the feature maps are flattened and passed through a series of fully connected layers, culminating in the final output layer with 10 neurons, corresponding to the 10 classes in the CIFAR-10 dataset.
+  - The final layer uses a softmax activation function to output class probabilities.
+**6. Parameter Count**:
+  - The total number of trainable parameters in this model is detailed in the summary found in the Cifar10_Classification.ipynb notebook, which includes weights and biases across all layers.
+**7. Special Components**:
+  - Batch Normalization: Applied after residual connections to stabilize the learning process.
+  - Residual and Skip Connections: Allow the network to learn residual functions, improving the flow of gradients through the network.
 
-- **Special Components**:
-  - **Residual Connections**: Skip connections are used to prevent vanishing gradients and improve learning in deeper networks.
-  - **Batch Normalization**: Helps in normalizing the input to each layer, thus speeding up the training process and making the model more stable.
-
+![Detailed Layer Architecture](https://github.com/the2roock/Cifar10-Classification/blob/main/report_images/Cifar10%20NN%201%20Layer%20Architecture.png)
+The network consists of several convolutional blocks, each designed to extract features and gradually downsample the input image. The blocks are connected through residual and skip connections.
 
 # Test Results
 

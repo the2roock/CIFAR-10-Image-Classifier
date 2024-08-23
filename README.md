@@ -68,6 +68,18 @@ The network employs a series of convolutional layers, residual connections, and 
 ![Detailed Layer Architecture](https://github.com/the2roock/Cifar10-Classification/blob/main/report_images/Cifar10%20NN%201%20Layer%20Architecture.png)
 The network consists of several convolutional blocks, each designed to extract features and gradually downsample the input image. The blocks are connected through residual and skip connections.
 
-# Test Results
+
+## Training Results
+### Training History
+The model was trained using the **Adam** optimization algorithm with a **Categorical Cross-Entropy** loss function. The training was conducted over three stages with varying epochs and learning rates:
+- **Batch Size**: 64
+- **Epochs**: 20 epochs with a learning rate of 3e-4, followed by 10 epochs with a learning rate of 1e-4, and a final 5 epochs with a learning rate of 5e-5.
+During training, the model's performance was monitored to ensure convergence and optimal learning. The results, including accuracy and loss over the training epochs, are visualized in the plot below. The final test score is also provided to evaluate the model's performance on unseen data.
+![Training History](https://github.com/the2roock/Cifar10-Classification/blob/main/report_images/Train%20Results.png)
+
+### Test Score
+- **Test Accuracy: 88.74 %**
+- **Test Loss: 0.5771**
+
 
 # Use Case

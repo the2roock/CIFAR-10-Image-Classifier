@@ -60,7 +60,7 @@ The network employs a series of convolutional layers, residual connections, and 
   - After the final convolutional layer, the feature maps are flattened and passed through a series of fully connected layers, culminating in the final output layer with 10 neurons, corresponding to the 10 classes in the CIFAR-10 dataset.
   - The final layer uses a softmax activation function to output class probabilities.
 6. **Parameter Count**:
-  - The total number of trainable parameters in this model is detailed in the summary found in the Cifar10_Classification.ipynb notebook, which includes weights and biases across all layers.
+  - The total number of trainable parameters in this model is detailed in the summary found in the [Cifar10_Classification.ipynb](https://github.com/the2roock/Cifar10-Classification/blob/main/Cifar10_Classification.ipynb) notebook, which includes weights and biases across all layers.
 7. **Special Components**:
   - Batch Normalization: Applied after residual connections to stabilize the learning process.
   - Residual and Skip Connections: Allow the network to learn residual functions, improving the flow of gradients through the network.

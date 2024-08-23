@@ -44,7 +44,7 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6
 ## Model Overview
 The model is a deep convolutional neural network (CNN) designed to effectively capture the features necessary for classification in the CIFAR-10 dataset. Below is an overview of the architecture:
 
-![Model Architecture](path/to/architecture_image.png)
+![Model Architecture](https://github.com/the2roock/Cifar10-Classification/blob/main/report_images/Cifar10%20NN%20Architecture.png)
 
 - **Layers**:
   - **Input Layer**: Accepts 32x32 RGB images.

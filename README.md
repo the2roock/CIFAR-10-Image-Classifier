@@ -1,7 +1,7 @@
-# Cifar10-Classification
+# CIFAR-10 Image Classifier
 
 ## Project Overview
-This project focuses on a classification task using the CIFAR-10 dataset, a popular benchmark for image classification. The goal is to develop and evaluate a deep learning model to accurately classify images into one of the 10 predefined categories. The final model achieved an accuracy of **88.7%**.
+This repository features a deep learning model for image classification using the CIFAR-10 dataset, a widely used benchmark for evaluating classification algorithms. The goal is to develop a model that categorizes images into one of 10 predefined classes with high accuracy. The final model achieved an accuracy of **88.7%** on the test set.
 
 
 ## Required Skills & Tools

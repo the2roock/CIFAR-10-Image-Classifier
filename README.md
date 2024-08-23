@@ -82,4 +82,14 @@ During training, the model's performance was monitored to ensure convergence and
 - **Test Loss: 0.5771**
 
 
-# Use Case
+## Use Case
+To illustrate the model's performance, we tested it on a batch of 25 images from the CIFAR-10 dataset. Below are two plots that showcase the model's classifications:
+
+### Example of Model Classifications
+The first plot displays 25 images with the model's predicted labels. Out of these, 24 images were classified correctly, while 1 was misclassified. This example provides a snapshot of the model's overall accuracy and occasional errors.
+![Use Case](https://github.com/the2roock/Cifar10-Classification/blob/main/report_images/Usecase.png)
+
+### Misclassified Images
+The second plot focuses on the model's misclassifications, presenting 25 images that were not correctly identified. Reviewing these cases can offer insights into the model's challenges and potential areas for further improvement.
+
+![Wrong predicts](https://github.com/the2roock/Cifar10-Classification/blob/main/report_images/Wrong%20predicts.png)
